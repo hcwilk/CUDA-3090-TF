@@ -13,3 +13,5 @@ docker build -t tensorflow/tensorflow:2.13.0-gpu .
 Just run `./start.sh`
 
 ## Next steps:
+
+Get VSCode extentions automatically installed

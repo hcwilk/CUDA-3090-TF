@@ -1,0 +1,13 @@
+FROM python:3.8-slim
+
+WORKDIR /cv
+
+# Install system dependencies for OpenCV
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0
+
+# Install necessary Python packages
+RUN pip install --no-cache-dir opencv-python mediapipe numpy
+
+CMD ["python3"]
